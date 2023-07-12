@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/fixed image/favicon.ico') }}">
+
+    <title>オリジナルアプリ</title>
+</head>
+
+<!-- <div class="side_area">
+    <div id="menu"><img src="/amusement/s/products/ap_temp/skin_fortune/images/menu_a_o.gif" alt="トップページ"><br />
+    <a href="info.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_ba','','/amusement/s/products/ap_temp/skin_fortune/images/menu_ba_o.gif',0)"><img src="/amusement/s/products/ap_temp/skin_fortune/images/menu_ba.gif" name="menu_ba" alt="ゲーム紹介"></a><br />
+    <a href="how2play.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_g','','/amusement/s/products/am_fortune_trinity/images/menu_g_o.gif',0)"><img src="/amusement/s/products/am_fortune_trinity/images/menu_g.gif" name="menu_g" alt="あそび方"></a><br />
+    <a href="ranking.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_d','','/amusement/s/products/am_fortune_trinity/images/menu_d_o.gif',0)"><img src="/amusement/s/products/am_fortune_trinity/images/menu_d.gif" name="menu_d" alt="ランキング"></a><br />
+    <a href="basic.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_c','','/amusement/s/products/ap_temp/skin_fortune/images/menu_c_o.gif',0)"><img src="/amusement/s/products/ap_temp/skin_fortune/images/menu_c.gif" name="menu_c" alt="基本情報"></a><br />
+    <a href="download.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_e','','/amusement/s/products/ap_temp/skin_fortune/images/menu_e_o.gif',0)"><img src="/amusement/s/products/ap_temp/skin_fortune/images/menu_e.gif" name="menu_e" alt="ダウンロード"></a><br />
+    <a href="shoplist.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_fa','','/amusement/s/products/ap_temp/skin_fortune/images/menu_fa_o.gif',0)"><img src="/amusement/s/products/ap_temp/skin_fortune/images/menu_fa.gif" name="menu_fa" alt="設置店舗情報"></a><br />
+    <a href="link.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_i','','/amusement/s/products/ap_temp/skin_fortune/images/menu_i_o.gif',0)"><img src="/amusement/s/products/ap_temp/skin_fortune/images/menu_i.gif" name="menu_i" alt="関連リンク"></a><br />
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <header>
+        <div class="logo">
+            <a href='/'>キノコ分類アプリ</a>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="/second">使い方</a></li>
+                <li><a href="#">キノコ図鑑</a></li>
+                <li><a href="#">毒キノコクイズ</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <!-- <footer>
+        <div class="footer_logo">©︎ GeekSalon_オリジナルアプリ</div>
+    </footer> -->
+</body>
+
+</html>

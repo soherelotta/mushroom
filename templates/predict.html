@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <div class="box">
+        <h2 class="result">このキノコは・・・{{pred}}</h2>
+        
+        {% if pred == "椎茸（シイタケ）" %}
+            <img src="static\images\fixed image\siitake.jpg" alt="シイタケの画像" style="width: 400px">
+            <p style="color: rgb(42, 197, 52); font-size: 50px; margin: 2px;">食用キノコです！</p>
+            <p>今回のおすすめ料理はこちら↓ <a href="https://delishkitchen.tv/recipes/353584200751776185" target="_blank"class="lo-link">外部サイトに移動！</a></p>
+        
+        {% elif pred == "平茸（ヒラタケ）" %}
+            <img src="static\images\fixed image\hiratake.jpg" alt="ヒラタケの画像" style="width: 400px">
+            <p style="color: rgb(42, 197, 52); font-size: 50px; margin: 2px;">食用キノコです！</p>
+            <p>今回のおすすめ料理はこちら↓ <a href="https://www.kurashiru.com/articles/e6037fba-48b0-4323-8ae0-6e5a82aa80de" target="_blank"class="lo-link">外部サイトに移動！</a></p>
+        
+        {% elif pred == "杏鮑菇（エリンギ）" %}
+            <img src="static\images\fixed image\eringi.jpg" alt="エリンギの画像" style="width: 400px">
+            <p style="color: rgb(42, 197, 52); font-size: 50px; margin: 2px;">食用キノコです！</p>
+            <p>今回のおすすめ料理はこちら↓ <a href="https://delishkitchen.tv/recipes/220230404920050006" target="_blank"class="lo-link">外部サイトに移動！</a></p>
+        
+        {% elif pred == "火炎茸（カエンタケ）" %}
+            <img src="static\images\fixed image\kaentake.jpg" alt="カエンタケの画像" style="width: 400px">
+            <p style="color: rgb(214, 10, 10); font-size: 50px; margin: 2px;">毒キノコです！</p>
+            <br>
+            致死量は3グラムであり、運動障害、小脳の萎縮などの症状の他、言語障害や手足のしびれ、呼吸困難や皮膚のただれや腎不全なども起こる。
+            <br>
+            <br>
+            食後すぐに発熱し上記の症状を起こし、ほぼ100%の確率で死に至る。
+            <br>
+        
+        {% elif pred == "柿占地（カキシメジ）" %}
+            <img src="static\images\fixed image\kakisimeji.jpg" alt="カキシメジの画像" style="width: 400px">
+            <p style="color: rgb(214, 10, 10); font-size: 50px; margin: 2px;">毒キノコです！</p>
+            <br>
+            食べると30分～3時間後に頭痛を伴う嘔吐・下痢・腹痛などの症状を起こす。
+            <br>
+            <br>
+            食中毒を起こした件数が多いキノコの内のひとつである。毒性はあるが大量に食べない限りは死に至らない。
+            <br>
+        
+        {% elif pred == "臭裏紅茸（クサウラベニタケ）" %}
+            <img src="static\images\fixed image\kusaurabenitake.jpg" alt="クサウラベニタケの画像" style="width: 400px">
+            <p style="color: rgb(214, 10, 10); font-size: 50px; margin: 2px;">毒キノコです！</p>
+            <br>
+            食べると消化器系の中毒症状が起こり、下痢、腹痛、嘔吐などの症状を起こす。唾液の分泌、瞳孔の収縮、発汗などの症状も現れる。
+            <br>
+            <br>
+            最も食中毒を起こした件数が多いキノコである。毒性はあるが大量に食べない限りは死に至らない。
+            <br>
+        
+        {% elif pred == "卵茸（タマゴタケ）" %}
+            <img src="static\images\fixed image\tamagotake.jpg" alt="タマゴタケの画像" style="width: 400px">
+            <p style="color: rgb(42, 197, 52); font-size: 50px; margin: 2px;">食用キノコです！</p>
+            <p>今回のおすすめ料理はこちら↓ <a href="https://cookpad.com/recipe/5841838" target="_blank"class="lo-link">外部サイトに移動！</a></p>
+        
+        {% elif pred == "毒鶴茸（ドクツルタケ）" %}
+            <img src="static\images\fixed image\dokutsurutake.jpg" alt="ドクツルタケの画像" style="width: 400px; margin-right : 20px;">
+            <p style="color: rgb(214, 10, 10); font-size: 50px; margin: 2px;">毒キノコです！</p>
+            <br>
+            食べると6～24時間で腹痛・嘔吐・下痢が発症。食べても治療すれば助かるが、治療しなければ肝・腎臓機能障害の症状（黄疸・下血など）が起き、手遅れになる。
+            <br>
+            <br>
+            早期に胃洗浄など適切な対応がないと、確実に死に至る。
+            <br>
+        {% elif pred == "舞茸（マイタケ）" %}
+            <img src="static\images\fixed image\maitake.jpg" alt="マイタケの画像" style="width: 400px;">
+            <p style="color: rgb(42, 197, 52); font-size: 50px; margin: 2px;">食用キノコです！</p>
+            <p>今回のおすすめ料理はこちら↓ <a href="https://oceans-nadia.com/user/658161/recipe/463742" target="_blank"class="lo-link">外部サイトに移動！</a></p>
+        
+        {% else %}
+            <img src="path/to/default_image.jpg" alt="デフォルト画像の説明">
+            <p>その他のキノコです。</p>
+        
+            {% endif %}
+    </div>
+</main>
+{% endblock %}
+
+
+
+
+
+
+
+
+<br>
+クリックすると、アップした画像から食用キノコか毒キノコが表示されます！
+<br>
+<br>
+クリックすると、アップした画像から食用キノコか毒キノコが表示されます！
+<br>

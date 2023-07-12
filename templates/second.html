@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+
+<p class="info-title">
+    使い方
+</p>
+<div class="about-container">
+    <p class="info-text">
+     <b>①</b>
+    <br>
+    <span class="font-small">
+    下記にある「ファイル選択」をクリック
+    </span>
+    </p>
+    
+<p class="info-text">
+    <b>②</b>
+    <br>
+    <span class="font-small">
+    キノコの画像を選択したのち、右下の「開く」をクリック
+  
+    </span>
+    </p>
+
+<p class="info-text">
+    
+    <b>③</b>
+    <br>
+    <span class="font-small">
+    最後に「判定」をクリック
+    <br>
+    クリックすると、アップした画像から食用キノコか毒キノコが表示されます！
+    <br>
+ 
+    </span>
+    </p>
+</div>
+<body>
+    <div class="enter_btn">
+        <h2>キノコの画像をアップロードしてください</h2>
+        <form action = "/predict" method="post" enctype="multipart/form-data">
+            <p><input type="file" id = "upload_file" name = "upload_file" multiple="multiple" class="form-control"></p>
+            <p><input type="submit" value="判定！" class="form-control btn btn-primary"></p>
+        </form>
+    </div>
+</body>
+{% endblock %}
